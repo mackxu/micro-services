@@ -1,0 +1,14 @@
+*.md
+node_modules/
+dist/
+test/
+uploads/
+.git/
+.gitignore
+.DS_Store
+.vscode/
+.dockerignore
+.eslintrc.js
+.prettierrc
+users.json
+books.json

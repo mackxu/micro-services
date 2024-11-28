@@ -1,0 +1,20 @@
+services:
+  gateway:
+    build:
+      context: .
+      dockerfile: ./apps/gateway/Dockerfile
+    ports:
+      - "4000:4000"
+  user:
+    build:
+      context: .
+      dockerfile: ./apps/user/Dockerfile
+    ports:
+      - "50051:50051"
+
+  book:
+    build:
+      context: .
+      dockerfile: ./apps/book_grpc/Dockerfile
+    ports:
+      - "50052:50052"
